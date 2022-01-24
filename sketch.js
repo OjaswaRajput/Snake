@@ -11,6 +11,8 @@ let food;
 let w;
 let h;
 
+var left;
+var right;
 var jumpSound
 
 function setup() {
@@ -19,6 +21,8 @@ function setup() {
   h = floor(height / rez);
   frameRate(5);
   snake = new Snake();
+  right = createSprite (width / 1 );
+  left = CreateSprite (height / 1 );
   foodLocation();
 }
 
