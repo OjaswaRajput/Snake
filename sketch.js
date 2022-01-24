@@ -43,11 +43,6 @@ function keyPressed() {
   function preload(){
   jumpSound = loadSound("jump.mp3");
   }
-function MousePressedOver () {
-if ( MousePressedOver = food ) {
-snake.setDir(0, 1);
-} 
-}
 }
 
 function draw() {
