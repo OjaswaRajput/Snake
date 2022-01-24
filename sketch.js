@@ -11,8 +11,6 @@ let food;
 let w;
 let h;
 
-var left;
-var right;
 var jumpSound
 
 function setup() {
@@ -21,8 +19,6 @@ function setup() {
   h = floor(height / rez);
   frameRate(5);
   snake = new Snake();
-  right = createSprite (width / 1 );
-  left = CreateSprite (height / 1 );
   foodLocation();
 }
 
@@ -43,11 +39,15 @@ function keyPressed() {
   } else if (keyCode === UP_ARROW) {
     snake.setDir(0, -1);
   } 
-
+  
   function preload(){
   jumpSound = loadSound("jump.mp3");
   }
-
+function MousePressedOver () {
+if ( MousePressedOver = food ) {
+snake.setDir(0, 1);
+} 
+}
 }
 
 function draw() {
