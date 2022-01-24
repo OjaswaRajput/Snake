@@ -43,6 +43,7 @@ function keyPressed() {
   function preload(){
   jumpSound = loadSound("jump.mp3");
   }
+  
 }
 
 function draw() {
